@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+main .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+main .container section.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+section.photo .contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.photo {
+    background-image: url(./images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px 0 0 12px;
+}
+
+section.text .contain {
+    background-color: #FFF;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 30px;
+    border-radius: 0 12px 12px 0;
+}
+
+section.text .contain .head {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color: hsl(228, 12%, 48%);
+}
+
+section.text .contain header {
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Fraunces', serif;
+}
+
+section.text .contain p {
+    font-size: 18px;
+    color: hsl(228, 12%, 48%);
+    line-height: 30px;
+}
+
+section.text .contain .nums {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+section.text .contain .nums .num-1 {
+    font-size: 35px;
+    font-weight: 800;
+    color: hsl(158, 36%, 37%);
+}
+
+section.text .contain .nums .num-2 {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+section.text .contain button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 30px;
+    outline: none;
+    border-radius: 12px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+    gap: 20px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+section.text .contain button:hover {
+    background-color: hsl(158, 49%, 25%);
+}
+
+section.text .contain button picture img {
+    width: 20px;
+}
+
+@media (max-width:1200px) {
+    main .container section.main {
+        width: 60%;
+    }
+    section.photo {
+        border-radius: 11px 0 0 11px;
+    }
+    section.text .contain {
+        padding: 45px;
+        gap: 28px;
+        border-radius: 0 11px 11px 0;
+    }
+    section.text .contain .head {
+        font-size: 17px;
+        letter-spacing: 7px;
+    }
+    section.text .contain header {
+        font-size: 45px;
+    }
+    section.text .contain p {
+        font-size: 17px;
+        line-height: 25px;
+    }
+    section.text .contain .nums {
+        gap: 45px;
+    }
+    section.text .contain .nums .num-1 {
+        font-size: 30px;
+    }
+    section.text .contain button {
+        padding: 16px 25px;
+        border-radius: 11px;
+        font-size: 18px;
+        gap: 18px;
+    }
+    section.text .contain button picture img {
+        width: 18px;
+    }
+}
+
+@media (max-width:992px) {
+    main .container section.main {
+        width: 80%;
+    }
+    section.photo {
+        border-radius: 10px 0 0 10px;
+    }
+    section.text .contain {
+        padding: 40px;
+        gap: 25px;
+        border-radius: 0 10px 10px 0;
+    }
+    section.text .contain .head {
+        font-size: 16px;
+        letter-spacing: 6px;
+    }
+    section.text .contain header {
+        font-size: 40px;
+    }
+    section.text .contain p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    section.text .contain .nums {
+        gap: 40px;
+    }
+    section.text .contain .nums .num-1 {
+        font-size: 25px;
+    }
+    section.text .contain button {
+        padding: 15px 20px;
+        border-radius: 10px;
+        font-size: 17px;
+        gap: 17px;
+    }
+    section.text .contain button picture img {
+        width: 17px;
+    }
+}
+
+@media (max-width:768px) {
+    main .container section.main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 95%;
+    }
+    section.photo {
+        border-radius: 8px 8px 0 0;
+        background-image: url(./images/image-product-mobile.jpg);
+    }
+    section.text .contain {
+        padding: 35px;
+        gap: 20px;
+        border-radius: 0 0 8px 8px;
+    }
+    section.text .contain .head {
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
+    section.text .contain header {
+        font-size: 35px;
+    }
+    section.text .contain p {
+        font-size: 15px;
+    }
+    section.text .contain .nums {
+        gap: 35px;
+    }
+    section.text .contain .nums .num-1 {
+        font-size: 30px;
+    }
+    section.text .contain button {
+        padding: 12px 18px;
+        border-radius: 8px;
+        font-size: 16px;
+        gap: 16px;
+    }
+    section.text .contain button picture img {
+        width: 16px;
+    }
+}
