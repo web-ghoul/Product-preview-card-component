@@ -24,7 +24,7 @@ main .container section.main {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 60%;
 }
 
 section.photo .contain {
